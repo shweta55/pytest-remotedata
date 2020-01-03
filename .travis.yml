@@ -35,19 +35,19 @@ matrix:
         - os: osx
           env: PYTHON_VERSION=3.7 PYTEST_VERSION=3.7
         - arch: arm64
-          PYTHON_VERSION=2.7 PYTEST_VERSION=3.1 PYTEST_COMMAND='py.test'
+          env: PYTHON_VERSION=2.7 PYTEST_VERSION=3.1 PYTEST_COMMAND='py.test'
         - arch: arm64
-          PYTHON_VERSION=2.7
+          env: PYTHON_VERSION=2.7
         - arch: arm64
-          PYTHON_VERSION=3.5
+          env: PYTHON_VERSION=3.5
         - arch: arm64
-          PYTHON_VERSION=3.6 PYTEST_VERSION=3.4
+          env: PYTHON_VERSION=3.6 PYTEST_VERSION=3.4
         - arch: arm64
-          PYTHON_VERSION=3.6 PYTEST_VERSION=4.5
+          env: PYTHON_VERSION=3.6 PYTEST_VERSION=4.5
         - arch: arm64
-          PYTHON_VERSION=3.6
+          env: PYTHON_VERSION=3.6
         - arch: arm64
-          PYTHON_VERSION=3.7 PYTEST_VERSION=5.0
+          env: PYTHON_VERSION=3.7 PYTEST_VERSION=5.0
           
 install:
     - git clone git://github.com/mohneesh9797-puresoftware/ci-helpers.git
