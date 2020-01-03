@@ -47,7 +47,9 @@ matrix:
         - arch: arm64
           env: PYTHON_VERSION=3.6
         - arch: arm64
-          env: PYTHON_VERSION=3.7 PYTEST_VERSION=5.0
+          env: 
+            - PYTHON_VERSION=3.7 PYTEST_VERSION=5.0
+            - CONDA_DEPENDENCIES='six'
           
 install:
     - git clone git://github.com/mohneesh9797-puresoftware/ci-helpers.git
