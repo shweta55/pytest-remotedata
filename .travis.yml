@@ -35,9 +35,7 @@ matrix:
         - os: osx
           env: PYTHON_VERSION=3.7 PYTEST_VERSION=3.7
         - arch: arm64
-          env:
-          - PYTHON_VERSION=3.7
-          - CONDA_DEPENDENCIES='six'
+          env: PYTHON_VERSION=3.7
 install:
     - git clone git://github.com/mohneesh9797-puresoftware/ci-helpers.git
     - source ci-helpers/travis/setup_conda.sh
