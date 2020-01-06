@@ -37,7 +37,6 @@ matrix:
         - arch: arm64
             env:
             - CONDA_DEPENDENCIES="pytest pytest-cov numpy astropy"
-            - PIP_DEPENDENCIES="codecov"
             - PYTHON_VERSION=3.7
           
 install:
